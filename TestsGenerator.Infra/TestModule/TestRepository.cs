@@ -14,6 +14,12 @@ namespace TestsGenerator.Infra.TestModule
     {
         public TestRepository(DataContext dataContext) : base(dataContext) { }
 
+        public override void UpdateCounter()
+        {
+            if (_dataContext.Tests.Count > 0)
+                counter = _dataContext.Tests.Max(x => x.Id);
+        }
+
         public override List<Test> GetRegisters()
         {
             return _dataContext.Tests;

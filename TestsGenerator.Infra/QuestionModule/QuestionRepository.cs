@@ -9,6 +9,12 @@ namespace TestsGenerator.Infra.QuestionModule
     {
         public QuestionRepository(DataContext dataContext) : base(dataContext) { }
 
+        public override void UpdateCounter()
+        {
+            if (_dataContext.Questions.Count > 0)
+                counter = _dataContext.Questions.Max(x => x.Id);
+        }
+
         public override List<Question> GetRegisters()
         {
             return _dataContext.Questions;

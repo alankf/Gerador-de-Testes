@@ -9,6 +9,12 @@ namespace TestsGenerator.Infra.MateriaModule
     {
         public MateriaRepository(DataContext dataContext) : base(dataContext) { }
 
+        public override void UpdateCounter()
+        {
+            if (_dataContext.Materias.Count > 0)
+                counter = _dataContext.Materias.Max(x => x.Id);
+        }
+
         public override List<Materia> GetRegisters()
         {
             return _dataContext.Materias;

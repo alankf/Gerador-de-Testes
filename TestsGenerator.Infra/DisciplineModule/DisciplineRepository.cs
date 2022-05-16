@@ -9,6 +9,12 @@ namespace TestsGenerator.Infra.DisciplineModule
     {
         public DisciplineRepository(DataContext dataContext) : base(dataContext) { }
 
+        public override void UpdateCounter()
+        {
+            if (_dataContext.Disciplines.Count > 0)
+                counter = _dataContext.Disciplines.Max(x => x.Id);
+        }
+
         public override List<Discipline> GetRegisters()
         {
             return _dataContext.Disciplines;

@@ -7,12 +7,15 @@ namespace TestsGenerator.Infra.Shared
     public abstract class BaseRepository<T> : IRepository<T> where T : BaseEntity<T>
     {
         protected DataContext _dataContext;
-        protected int counter = 0;
+        protected int counter;
 
         public BaseRepository(DataContext dataContext)
         {
             _dataContext = dataContext;
+            UpdateCounter();
         }
+
+        public abstract void UpdateCounter();
 
         public abstract List<T> GetRegisters();
 
