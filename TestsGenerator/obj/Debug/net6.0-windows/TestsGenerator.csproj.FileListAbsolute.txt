@@ -1,0 +1,182 @@
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.exe
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.deps.json
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.runtimeconfig.json
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\FluentValidation.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.AssemblyReference.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DashboardForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.DisciplineControl.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.RegisterDisciplineForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.MateriaControl.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.RegisterMateriaForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.Properties.Resources.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.QuestionControl.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.RegisterQuestionForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.GeneratePdfForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.RegisterTestForm.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.TestControl.resources
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.GenerateResource.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfoInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfo.cs
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CoreCompileInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CopyComplete
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\refint\TestsGenerator.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.genruntimeconfig.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\ref\TestsGenerator.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.exe
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.deps.json
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.runtimeconfig.json
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\ref\TestsGenerator.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.pdb
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\FluentValidation.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.pdb
+D:\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.pdb
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.AssemblyReference.cache
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DashboardForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.DisciplineControl.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.RegisterDisciplineForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.MateriaControl.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.RegisterMateriaForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.Properties.Resources.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.QuestionControl.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.RegisterQuestionForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.GeneratePdfForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.RegisterTestForm.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.TestControl.resources
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.GenerateResource.cache
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfoInputs.cache
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfo.cs
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CoreCompileInputs.cache
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CopyComplete
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.dll
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\ref\TestsGenerator.dll
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.pdb
+D:\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.genruntimeconfig.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.exe
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.deps.json
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.runtimeconfig.json
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\ref\TestsGenerator.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\FluentValidation.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.AssemblyReference.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DashboardForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.DisciplineControl.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.RegisterDisciplineForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.MateriaControl.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.RegisterMateriaForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.Properties.Resources.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.QuestionControl.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.RegisterQuestionForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.GeneratePdfForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.RegisterTestForm.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.TestControl.resources
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.GenerateResource.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfoInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfo.cs
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CopyComplete
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\ref\TestsGenerator.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.genruntimeconfig.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.exe
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.deps.json
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.runtimeconfig.json
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\FluentValidation.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.AssemblyReference.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DashboardForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.DisciplineControl.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.RegisterDisciplineForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.MateriaControl.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.MateriaModule.RegisterMateriaForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.Properties.Resources.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.QuestionControl.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.QuestionModule.RegisterQuestionForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.GeneratePdfForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.RegisterTestForm.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.TestModule.TestControl.resources
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.GenerateResource.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfoInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AssemblyInfo.cs
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.CopyComplete
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\refint\TestsGenerator.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.genruntimeconfig.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\ref\TestsGenerator.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.barcodes.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.forms.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.io.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.kernel.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.layout.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.pdfa.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.sign.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.styledxmlparser.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.svg.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.commons.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.barcodes.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.forms.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.io.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.kernel.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.layout.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.pdfa.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.sign.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.styledxmlparser.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.svg.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\itext.commons.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll

@@ -1,0 +1,47 @@
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.deps.json
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.AssemblyReference.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfoInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfo.cs
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.CoreCompileInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\refint\TestsGenerator.Domain.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\ref\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.deps.json
+D:\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\ref\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfoInputs.cache
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfo.cs
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.CoreCompileInputs.cache
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\ref\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.deps.json
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\ref\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.AssemblyReference.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfoInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfo.cs
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\ref\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.deps.json
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.AssemblyReference.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfoInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.AssemblyInfo.cs
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\refint\TestsGenerator.Domain.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Domain\obj\Debug\net6.0\ref\TestsGenerator.Domain.dll

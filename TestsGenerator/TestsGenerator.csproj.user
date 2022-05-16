@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DisciplineModule\DisciplineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DisciplineModule\RegisterDisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MateriaModule\MateriaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MateriaModule\RegisterMateriaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TestModule\GeneratePdfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuestionModule\QuestionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="QuestionModule\RegisterQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TestModule\RegisterTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TestModule\TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YEhSHPd0DLpQxMeUNyh7hT+lIuzLqH9BP78bLO8PVR835roHmxFz2WahxALP2kZlO+V57lLYiyMu+dH9pVWV5g==",
+  "success": true,
+  "projectFilePath": "D:\\vs-2022 academia do programador\\TestsGenerator\\TestsGenerator.Domain\\TestsGenerator.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alanf\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

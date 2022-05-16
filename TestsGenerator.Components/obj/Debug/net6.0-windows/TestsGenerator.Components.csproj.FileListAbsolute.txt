@@ -1,0 +1,47 @@
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.deps.json
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.AssemblyReference.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfoInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfo.cs
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.CoreCompileInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\refint\TestsGenerator.Components.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\ref\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.deps.json
+D:\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\ref\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfoInputs.cache
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfo.cs
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.CoreCompileInputs.cache
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\ref\TestsGenerator.Components.dll
+D:\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.deps.json
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\ref\TestsGenerator.Components.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.AssemblyReference.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfoInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfo.cs
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\ref\TestsGenerator.Components.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.deps.json
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.AssemblyReference.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfoInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.AssemblyInfo.cs
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.csproj.CoreCompileInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\refint\TestsGenerator.Components.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\TestsGenerator.Components.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Components\obj\Debug\net6.0-windows\ref\TestsGenerator.Components.dll

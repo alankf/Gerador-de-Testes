@@ -1,0 +1,60 @@
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.deps.json
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.AssemblyReference.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfoInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfo.cs
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CoreCompileInputs.cache
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CopyComplete
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\refint\TestsGenerator.Infra.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\ref\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.deps.json
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\ref\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.pdb
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.dll
+D:\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.AssemblyReference.cache
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfoInputs.cache
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfo.cs
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CoreCompileInputs.cache
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CopyComplete
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\ref\TestsGenerator.Infra.dll
+D:\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.deps.json
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\ref\TestsGenerator.Infra.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.AssemblyReference.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfoInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfo.cs
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CopyComplete
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\ref\TestsGenerator.Infra.dll
+C:\Users\ALUNO\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.deps.json
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Infra.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\bin\Debug\net6.0\TestsGenerator.Domain.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.AssemblyReference.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfoInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.AssemblyInfo.cs
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CoreCompileInputs.cache
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.csproj.CopyComplete
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\refint\TestsGenerator.Infra.dll
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\TestsGenerator.Infra.pdb
+C:\Users\alanf\Desktop\TestsGenerator\TestsGenerator.Infra\obj\Debug\net6.0\ref\TestsGenerator.Infra.dll
