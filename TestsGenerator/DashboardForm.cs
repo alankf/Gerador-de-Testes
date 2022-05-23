@@ -1,6 +1,6 @@
 using TestsGenerator.DisciplineModule;
-using TestsGenerator.Infra.DisciplineModule;
-using TestsGenerator.Infra.MateriaModule;
+using TestsGenerator.Infra.Database.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.QuestionModule;
 using TestsGenerator.Infra.Shared;
 using TestsGenerator.Infra.TestModule;
@@ -14,7 +14,7 @@ namespace TestsGenerator
     public partial class DashboardForm : Form
     {
         private BaseController controller;
-        private Dictionary<string, BaseController> controllers;
+        private readonly Dictionary<string, BaseController> controllers;
         private readonly DataContext _dataContext;
 
         public DashboardForm(DataContext dataContext)
@@ -23,8 +23,8 @@ namespace TestsGenerator
 
             _dataContext = dataContext;
 
-            DisciplineRepository disciplineRepository = new(_dataContext);
-            MateriaRepository materiaRepository = new(_dataContext);
+            DisciplineRepository disciplineRepository = new();
+            MateriaRepository materiaRepository = new();
             QuestionRepository questionRepository = new(_dataContext);
             TestRepository testRepository = new(_dataContext);
 

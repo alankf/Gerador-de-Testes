@@ -180,3 +180,11 @@ D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.Database.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.Database.pdb

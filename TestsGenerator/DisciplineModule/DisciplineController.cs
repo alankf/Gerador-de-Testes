@@ -1,5 +1,5 @@
 ﻿using TestsGenerator.Domain.DisciplineModule;
-using TestsGenerator.Infra.DisciplineModule;
+using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Shared;
 
 namespace TestsGenerator.DisciplineModule
@@ -79,7 +79,7 @@ namespace TestsGenerator.DisciplineModule
 
         private void LoadDisciplines()
         {
-            List<Discipline> disciplines = _disciplineRepository.GetRegisters();
+            List<Discipline> disciplines = _disciplineRepository.GetAll();
 
             disciplineControl.UpdateGrid(disciplines);
         }

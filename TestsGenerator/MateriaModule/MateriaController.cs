@@ -1,6 +1,6 @@
 ﻿using TestsGenerator.Domain.MateriaModule;
-using TestsGenerator.Infra.DisciplineModule;
-using TestsGenerator.Infra.MateriaModule;
+using TestsGenerator.Infra.Database.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Shared;
 
 namespace TestsGenerator.MateriaModule
@@ -21,7 +21,7 @@ namespace TestsGenerator.MateriaModule
 
         public override void Insert()
         {
-            RegisterMateriaForm screen = new(_disciplineRepository.GetRegisters());
+            RegisterMateriaForm screen = new(_disciplineRepository.GetAll());
 
             screen.Materia = new();
             screen.SaveRecord = _materiaRepository.Insert;
@@ -42,7 +42,7 @@ namespace TestsGenerator.MateriaModule
                 return;
             }
 
-            RegisterMateriaForm screen = new(_disciplineRepository.GetRegisters());
+            RegisterMateriaForm screen = new(_disciplineRepository.GetAll());
 
             screen.Text = "Editando Matéria";
 
@@ -83,12 +83,12 @@ namespace TestsGenerator.MateriaModule
 
         private void LoadMaterias()
         {
-            List<Materia> materias = _materiaRepository.GetRegisters();
+            List<Materia> materias = _materiaRepository.GetAll();
 
             materiaControl.UpdateGrid(materias);
         }
 
-        private Materia GetMateria()
+        private Materia? GetMateria()
         {
             if (materiaControl.GetGrid().CurrentCell != null && materiaControl.GetGrid().CurrentCell.Selected == true)
             {

@@ -1,6 +1,6 @@
 ﻿using TestsGenerator.Domain.TestModule;
-using TestsGenerator.Infra.DisciplineModule;
-using TestsGenerator.Infra.MateriaModule;
+using TestsGenerator.Infra.Database.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.QuestionModule;
 using TestsGenerator.Infra.TestModule;
 using TestsGenerator.Shared;
@@ -27,7 +27,7 @@ namespace TestsGenerator.TestModule
 
         public override void Insert()
         {
-            RegisterTestForm screen = new(_disciplineRepository.GetRegisters(), _materiaRepository.GetRegisters(), _questionRepository.GetRegisters());
+            RegisterTestForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll(), _questionRepository.GetRegisters());
 
             screen.Test = new();
             screen.SaveRecord = _testRepository.Insert;

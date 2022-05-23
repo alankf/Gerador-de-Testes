@@ -1,6 +1,6 @@
 ﻿using TestsGenerator.Domain.QuestionModule;
-using TestsGenerator.Infra.DisciplineModule;
-using TestsGenerator.Infra.MateriaModule;
+using TestsGenerator.Infra.Database.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.QuestionModule;
 using TestsGenerator.Shared;
 
@@ -24,7 +24,7 @@ namespace TestsGenerator.QuestionModule
 
         public override void Insert()
         {
-            RegisterQuestionForm screen = new(_disciplineRepository.GetRegisters(), _materiaRepository.GetRegisters());
+            RegisterQuestionForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll());
 
             screen.Question = new();
             screen.SaveRecord = _questionRepository.Insert;
@@ -45,7 +45,7 @@ namespace TestsGenerator.QuestionModule
                 return;
             }
 
-            RegisterQuestionForm screen = new(_disciplineRepository.GetRegisters(), _materiaRepository.GetRegisters());
+            RegisterQuestionForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll());
 
             screen.Text = "Editando Questão";
 
