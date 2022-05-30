@@ -60,7 +60,7 @@ namespace TestsGenerator.MateriaModule
 
         public override void Delete()
         {
-            Materia selectedMateria = GetMateria();
+            Materia? selectedMateria = GetMateria();
 
             if (selectedMateria == null)
             {
@@ -68,19 +68,18 @@ namespace TestsGenerator.MateriaModule
                 return;
             }
 
-            ValidationResult validationResult = _materiaRepository.Delete(selectedMateria);
-
-            if (validationResult.IsValid == false)
-            {
-                MessageBox.Show($"\n{validationResult}", "Exclusão de Matéria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             DialogResult dialogResult = MessageBox.Show("Deseja realmente excluir este registro?", "Exclusão de Matéria", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (dialogResult == DialogResult.OK)
             {
-                _materiaRepository.Delete(selectedMateria);
+                ValidationResult validationResult = _materiaRepository.Delete(selectedMateria);
+
+                if (validationResult.IsValid == false)
+                {
+                    MessageBox.Show($"\n{validationResult}", "Exclusão de Matéria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 LoadMaterias();
             }
         }

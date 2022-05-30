@@ -25,29 +25,6 @@ namespace TestsGenerator.Domain.QuestionModule
             RuleFor(x => x.Description)
                 .NotEmpty()
                 .WithMessage("Campo 'Enunciado' é obrigatório.");
-
-            RuleFor(x => x.Alternatives)
-                .NotEmpty()
-                .WithMessage("É necessário ter ao menos uma alternativa adicionada.");
-
-            RuleFor(x => x.Alternatives.Any(y => y.IsCorrect))
-                .NotEmpty()
-                .WithMessage("Ao menos uma alternativa deve ser definida como correta.");
-        }
-    }
-
-    public class AlternativeValidator : AbstractValidator<Alternative>
-    {
-        public AlternativeValidator()
-        {
-
-            RuleFor(x => x.Letter)
-                .NotEmpty()
-                .WithMessage("Campo 'Letra' é obrigatório.");
-
-            RuleFor(x => x.Description)
-                .NotEmpty()
-                .WithMessage("Campo 'Descrição' é obrigatório.");
         }
     }
 }

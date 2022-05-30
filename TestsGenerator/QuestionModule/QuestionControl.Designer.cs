@@ -45,6 +45,7 @@
             this.ClnBimester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClnMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClnDiscipline = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnAddAlternatives = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridQuestions)).BeginInit();
@@ -69,6 +70,7 @@
             this.BtnRegisterQuestion,
             this.BtnEditQuestion,
             this.BtnDeleteQuestion,
+            this.BtnAddAlternatives,
             this.toolStripSeparator1,
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -220,6 +222,18 @@
             this.ClnDiscipline.ReadOnly = true;
             this.ClnDiscipline.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // BtnAddAlternatives
+            // 
+            this.BtnAddAlternatives.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnAddAlternatives.Image = ((System.Drawing.Image)(resources.GetObject("BtnAddAlternatives.Image")));
+            this.BtnAddAlternatives.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.BtnAddAlternatives.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnAddAlternatives.Name = "BtnAddAlternatives";
+            this.BtnAddAlternatives.Size = new System.Drawing.Size(28, 44);
+            this.BtnAddAlternatives.Text = "toolStripButton1";
+            this.BtnAddAlternatives.ToolTipText = "Adicionar Alternativas";
+            this.BtnAddAlternatives.Click += new System.EventHandler(this.BtnAddAlternatives_Click);
+            // 
             // QuestionControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -251,5 +265,6 @@
         private DataGridViewTextBoxColumn ClnBimester;
         private DataGridViewTextBoxColumn ClnMateria;
         private DataGridViewTextBoxColumn ClnDiscipline;
+        private ToolStripButton BtnAddAlternatives;
     }
 }

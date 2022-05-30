@@ -1,4 +1,6 @@
 ﻿using FluentValidation.Results;
+using TestsGenerator.AlternativeModule;
+using TestsGenerator.Domain.AlternativeModule;
 using TestsGenerator.Domain.QuestionModule;
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
@@ -65,7 +67,7 @@ namespace TestsGenerator.QuestionModule
 
         public override void Delete()
         {
-            Question selectedQuestion = GetQuestion();
+            Question? selectedQuestion = GetQuestion();
 
             if (selectedQuestion == null)
             {
@@ -73,20 +75,38 @@ namespace TestsGenerator.QuestionModule
                 return;
             }
 
-
-            ValidationResult validationResult = _questionRepository.Delete(selectedQuestion);
-
-            if (validationResult.IsValid == false)
-            {
-                MessageBox.Show($"\n{validationResult}", "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             DialogResult dialogResult = MessageBox.Show("Deseja realmente excluir este registro?", "Exclusão de Questão", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (dialogResult == DialogResult.OK)
             {
-                _questionRepository.Delete(selectedQuestion);
+                ValidationResult validationResult = _questionRepository.Delete(selectedQuestion);
+
+                if (validationResult.IsValid == false)
+                {
+                    MessageBox.Show($"\n{validationResult}", "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                LoadQuestions();
+            }
+        }
+
+        public void AddAlternatives()
+        {
+            Question? selectedQuestion = GetQuestion();
+
+            if (selectedQuestion == null)
+            {
+                MessageBox.Show("Selecione uma questão primeiro.", "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            RegisterAlternativeForm screen = new(_questionRepository, selectedQuestion);
+
+            if (screen.ShowDialog() == DialogResult.OK)
+            {
+                _questionRepository.AddAlternatives(selectedQuestion, screen.RegisteredAlternatives);
+
                 LoadQuestions();
             }
         }

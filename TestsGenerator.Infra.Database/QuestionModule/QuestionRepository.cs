@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using System.Data.SqlClient;
+using TestsGenerator.Domain.AlternativeModule;
 using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.QuestionModule;
 using TestsGenerator.Domain.Shared;
@@ -35,7 +36,7 @@ namespace TestsGenerator.Infra.Database.QuestionModule
 
             using (conn = new(connectionString))
             {
-                string query = 
+                string query =
                     @"INSERT INTO [TBQUESTIONS]
                         (
                             [DESCRIPTION],
@@ -79,7 +80,7 @@ namespace TestsGenerator.Infra.Database.QuestionModule
 
             using (conn = new(connectionString))
             {
-                string query = 
+                string query =
                     @"UPDATE [TBQUESTIONS]
                         SET
                             [DESCRIPTION] = @DESCRIPTION,
@@ -97,7 +98,7 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                 command.Parameters.AddWithValue("DESCRIPTION", question.Description);
                 command.Parameters.AddWithValue("GRADE", question.Grade);
                 command.Parameters.AddWithValue("BIMESTER", question.Bimester);
-                command.Parameters.AddWithValue("MATERIA_ID", question.Materia);
+                command.Parameters.AddWithValue("MATERIA_ID", question.Materia.Id);
 
                 command.ExecuteNonQuery();
 
@@ -122,11 +123,12 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                 _testRepository.GetRegisters().Select(x => x.Questions).ToList().ForEach(x =>
                 {
                     if (x.Contains(question))
-                        validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta matéria, pois ela está relacionada a uma questão."));
+                        validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta questão, pois ela está relacionada a um teste."));
                 });
 
-                if (validationResult.IsValid)
-                    command.ExecuteNonQuery();
+                question.Alternatives.ForEach(x => DeleteAlternative(x));
+                question.Alternatives.Clear();
+                command.ExecuteNonQuery();
 
                 return validationResult;
             }
@@ -208,53 +210,6 @@ namespace TestsGenerator.Infra.Database.QuestionModule
             }
         }
 
-        public Question? GetById(int id)
-        {
-            using (conn = new(connectionString))
-            {
-                string query = "";
-
-                using SqlCommand command = new(query, conn);
-
-                command.Parameters.AddWithValue("ID", id);
-
-                conn.Open();
-
-                using SqlDataReader reader = command.ExecuteReader();
-
-                Question? question = null;
-
-                if (reader.Read())
-                {
-                    Discipline discipline = new()
-                    {
-                        Id = Convert.ToInt32(reader["DISCIPLINE_ID"]),
-                        Name = Convert.ToString(reader["DISCIPLINE_NAME"])
-                    };
-
-                    question = new()
-                    {
-                        Id = Convert.ToInt32(reader["ID"]),
-                        Description = Convert.ToString(reader["DESCRIPTION"]),
-                        Grade = Convert.ToString(reader["GRADE"]),
-                        Bimester = (Bimester)reader["BIMESTER"],
-                        Discipline = discipline,
-
-                        Materia = new()
-                        {
-                            Id = Convert.ToInt32(reader["MATERIA_ID"]),
-                            Name = Convert.ToString(reader["MATERIA_NAME"]),
-                            Grade = Convert.ToString(reader["MATERIA_GRADE"]),
-                            Bimester = (Bimester)reader["MATERIA_BIMESTER"],
-                            Discipline = discipline
-                        }
-                    };
-                }
-
-                return question;
-            }
-        }
-
         public AbstractValidator<Question> GetValidator()
         {
             return new QuestionValidator();
@@ -268,9 +223,9 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                     @"SELECT 
 	                        [ID],
 	                        [LETTER],
-	                        [ISCORRET],
-	                        [QUESTION_ID],
-                            [DESCRIPTION]
+	                        [ISCORRECT],
+                            [DESCRIPTION],
+	                        [QUESTION_ID]
                         FROM 
 	                        [TBQUESTIONSALTERNATIVES]
                         WHERE
@@ -290,7 +245,7 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                     {
                         Id = Convert.ToInt32(reader["ID"]),
                         Letter = Convert.ToString(reader["LETTER"]),
-                        IsCorrect = Convert.ToBoolean(reader["ISCORRET"]),
+                        IsCorrect = Convert.ToBoolean(reader["ISCORRECT"]),
                         Description = Convert.ToString(reader["DESCRIPTION"])
                     };
 
@@ -305,27 +260,27 @@ namespace TestsGenerator.Infra.Database.QuestionModule
             {
                 conn.Open();
 
-                string query = 
+                string query =
                     @"INSERT INTO TBQUESTIONSALTERNATIVES
                         (
                             [LETTER],
-                            [ISCORRET],
-                            [QUESTION_ID],
-                            [DESCRIPTION]
+                            [ISCORRECT],
+                            [DESCRIPTION],
+                            [QUESTION_ID]
                         )
                         
                         VALUES
                 
                         (
                             @LETTER,
-                            @ISCORRET,
-                            @QUESTION_ID,
-                            @DESCRIPTION
+                            @ISCORRECT,
+                            @DESCRIPTION,
+                            @QUESTION_ID
                         )
                         
                         SELECT SCOPE_IDENTITY()";
 
-                foreach (var alternative in alternatives)
+                foreach (Alternative alternative in alternatives)
                 {
                     if (alternative.Id > 0)
                         continue;
@@ -335,12 +290,56 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                     using SqlCommand command = new(query, conn);
 
                     command.Parameters.AddWithValue("LETTER", alternative.Letter);
-                    command.Parameters.AddWithValue("ISCORRET", alternative.IsCorrect);
-                    command.Parameters.AddWithValue("QUESTION_ID", alternative.Question.Id);
+                    command.Parameters.AddWithValue("ISCORRECT", alternative.IsCorrect);
                     command.Parameters.AddWithValue("DESCRIPTION", alternative.Description);
+                    command.Parameters.AddWithValue("QUESTION_ID", alternative.Question.Id);
 
                     alternative.Id = Convert.ToInt32(command.ExecuteScalar());
                 }
+            }
+        }
+
+        public void UpdateAlternative(Alternative alternative)
+        {
+            using (conn = new(connectionString))
+            {
+                string query =
+                    @"UPDATE [TBQUESTIONSALTERNATIVES]
+                        SET
+                            [LETTER] = @LETTER,
+                            [ISCORRECT] = @ISCORRECT,
+                            [DESCRIPTION] = @DESCRIPTION,
+                            [QUESTION_ID] = @QUESTION_ID
+                        WHERE
+                            [ID] = @ID";
+
+                using SqlCommand command = new(query, conn);
+
+                conn.Open();
+
+                command.Parameters.AddWithValue("ID", alternative.Id);
+                command.Parameters.AddWithValue("LETTER", alternative.Letter);
+                command.Parameters.AddWithValue("ISCORRECT", alternative.IsCorrect);
+                command.Parameters.AddWithValue("DESCRIPTION", alternative.Description);
+                command.Parameters.AddWithValue("QUESTION_ID", alternative.Question.Id);
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteAlternative(Alternative alternative)
+        {
+            using (conn = new(connectionString))
+            {
+                string query = @"DELETE FROM [TBQUESTIONSALTERNATIVES] WHERE [ID] = @ID";
+
+                using SqlCommand command = new(query, conn);
+
+                conn.Open();
+
+                command.Parameters.AddWithValue("ID", alternative.Id);
+
+                command.ExecuteNonQuery();
             }
         }
     }

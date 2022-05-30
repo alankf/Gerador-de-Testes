@@ -90,7 +90,7 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
                     validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta disciplina, pois ela está relacionada a uma matéria."));
 
                 if (validationResult.IsValid)
-                    command.ExecuteNonQuery();
+                   command.ExecuteNonQuery();
 
                 return validationResult;
             }
@@ -122,33 +122,6 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
                 }
 
                 return disciplines;
-            }
-        }
-
-        public Discipline? GetById(int id)
-        {
-            using (conn = new(connectionString))
-            {
-                string query = @"SELECT * FROM [TBDISCIPLINES] WHERE [ID] = @ID";
-
-                using SqlCommand command = new(query, conn);
-
-                command.Parameters.AddWithValue("ID", id);
-
-                conn.Open();
-
-                using SqlDataReader reader = command.ExecuteReader();
-
-                Discipline? discipline = null;
-
-                if (reader.Read())
-                    discipline = new()
-                    {
-                        Id = Convert.ToInt32(reader["ID"]),
-                        Name = Convert.ToString(reader["Name"])
-                    };
-
-                return discipline;
             }
         }
 

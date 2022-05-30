@@ -39,13 +39,7 @@ namespace TestsGenerator.QuestionModule
                 CbxBimester.SelectedItem = question.Bimester;
                 CbxMateria.SelectedItem = question.Materia;
                 RTxbDescription.Text = question.Description;
-                question.Alternatives.ForEach(x => ListAlternatives.Items.Add(x));
             }
-        }
-
-        public List<Alternative> RegisteredAlternatives
-        {
-            get { return ListAlternatives.Items.Cast<Alternative>().ToList(); }
         }
 
         public Func<Question, ValidationResult> SaveRecord { get; set; }
@@ -60,8 +54,6 @@ namespace TestsGenerator.QuestionModule
 
             question.Materia = (Materia)CbxMateria.SelectedItem;
             question.Description = RTxbDescription.Text;
-
-            question.Alternatives = RegisteredAlternatives;
 
             ValidationResult validationResult = SaveRecord(question);
 
@@ -118,74 +110,6 @@ namespace TestsGenerator.QuestionModule
         private void CbxMateria_SelectedIndexChanged(object sender, EventArgs e)
         {
             question.Materia = (Materia)CbxMateria.SelectedItem;
-        }
-
-        private void ListAlternatives_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (ListAlternatives.SelectedItem is Alternative selectedItem)
-            {
-                TxbLetter.Text = selectedItem.Letter;
-                ChbIsCorret.Checked = selectedItem.IsCorrect;
-                TxbDescription.Text = selectedItem.Description;
-            }
-        }
-
-        private void BtnAddAlternative_Click(object sender, EventArgs e)
-        {
-            if (ListAlternatives.SelectedItem != null)
-                return;
-
-            Alternative alternative = new(TxbLetter.Text, ChbIsCorret.Checked, TxbDescription.Text);
-            
-            AlternativeValidator alternativeValidator = new();
-
-            ValidationResult validationResult = alternativeValidator.Validate(alternative);
-
-            if (validationResult.IsValid == false)
-            {
-                MessageBox.Show(validationResult.ToString("\n"), Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            ListAlternatives.Items.Add(alternative);
-
-            ClearFields();
-        }
-
-        private void BtnEditAlternative_Click(object sender, EventArgs e)
-        {
-            if (ListAlternatives.SelectedItem is Alternative selectedItem)
-            {
-                selectedItem.Letter = TxbLetter.Text;
-                selectedItem.IsCorrect = ChbIsCorret.Checked;
-                selectedItem.Description = TxbDescription.Text;
-
-                int index = ListAlternatives.SelectedIndex;
-
-                ListAlternatives.Items.RemoveAt(index);
-                ListAlternatives.Items.Insert(index, selectedItem); 
-            }
-
-            ClearFields();
-            ListAlternatives.ClearSelected();
-        }
-
-        private void BtnDeleteAlternative_Click(object sender, EventArgs e)
-        {
-            if (ListAlternatives.SelectedItem is Alternative)
-            {
-                int index = ListAlternatives.SelectedIndex;
-
-                ClearFields();
-                ListAlternatives.Items.RemoveAt(index);
-            }
-        }
-
-        private void ClearFields()
-        {
-            TxbLetter.Clear();
-            ChbIsCorret.Checked = false;
-            TxbDescription.Clear();
         }
     }
 }

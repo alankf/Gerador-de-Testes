@@ -11,14 +11,10 @@ namespace TestsGenerator.DisciplineModule
         private readonly DisciplineRepository _disciplineRepository;
         private readonly DisciplineControl disciplineControl;
 
-        private readonly MateriaRepository _materiaRepository;
-
         public DisciplineController(DisciplineRepository disciplineRepository, MateriaRepository materiaRepository)
         {
             _disciplineRepository = disciplineRepository;
             disciplineControl = new(this);
-
-            _materiaRepository = materiaRepository;
         }
 
         public override void Insert()
@@ -37,7 +33,7 @@ namespace TestsGenerator.DisciplineModule
 
         public override void Update()
         {
-            Discipline selectedDiscipline = GetDiscipline();
+            Discipline? selectedDiscipline = GetDiscipline();
 
             if (selectedDiscipline == null)
             {
@@ -61,7 +57,7 @@ namespace TestsGenerator.DisciplineModule
 
         public override void Delete()
         {
-            Discipline selectedDiscipline = GetDiscipline();
+            Discipline? selectedDiscipline = GetDiscipline();
 
             if (selectedDiscipline == null)
             {
@@ -69,20 +65,18 @@ namespace TestsGenerator.DisciplineModule
                 return;
             }
 
-            ValidationResult validationResult = _disciplineRepository.Delete(selectedDiscipline);
-
-
-            if (validationResult.IsValid == false)
-            {
-                MessageBox.Show($"\n{validationResult}", "Exclusão de Disciplina", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            } 
-
             DialogResult dialogResult = MessageBox.Show("Deseja realmente excluir este registro?", "Exclusão de Disciplina", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (dialogResult == DialogResult.OK)
             {
-                _disciplineRepository.Delete(selectedDiscipline);
+                ValidationResult validationResult = _disciplineRepository.Delete(selectedDiscipline);
+
+                if (validationResult.IsValid == false)
+                {
+                    MessageBox.Show($"\n{validationResult}", "Exclusão de Disciplina", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 LoadDisciplines();
             }
         }

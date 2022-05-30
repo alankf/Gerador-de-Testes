@@ -84,6 +84,15 @@
         d/53zadaYG0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="BtnAddAlternatives.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVEhL3ZQxDoAwDAP7NP7/GfgBOEMYDFZaQ5ee5CE6
+        h0gMbUuzITtyDiZ2YrfkQN4+0JM4UpLlUbr3fj/AQhaB5VjIIrAcC1kElmOhZpWE55uqmLNKwvNNdxFY
+        joUsAsuxkEVgORayWCD3WMhigdxj8eWxi90HKZN4cp0jsfP6XGdhGtMPfPnnkRL3n2eWpLULnmPC5b00
+        ZYwAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="ClnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

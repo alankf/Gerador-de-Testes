@@ -1,4 +1,5 @@
-﻿using TestsGenerator.Domain.DisciplineModule;
+﻿using TestsGenerator.Domain.AlternativeModule;
+using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Domain.Shared;
 
@@ -31,32 +32,6 @@ namespace TestsGenerator.Domain.QuestionModule
         public void AddAlternative(Alternative alternative)
         {
             Alternatives.Add(alternative);
-        }
-    }
-
-    public class Alternative
-    {
-        public int Id { get; set; }
-        public string Letter { get; set; }
-        public bool IsCorrect { get; set; }
-        public string Description { get; set; }
-        public Question Question { get; set; }
-
-        public Alternative()
-        {
-
-        }
-
-        public Alternative(string letter, bool isCorrect, string description)
-        {
-            Letter = letter;
-            IsCorrect = isCorrect;
-            Description = description;
-        }
-
-        public override string ToString()
-        {
-            return $"{Letter}) {Description}";
         }
     }
 }

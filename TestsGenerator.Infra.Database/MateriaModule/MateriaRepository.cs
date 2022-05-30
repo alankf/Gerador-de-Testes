@@ -176,54 +176,6 @@ namespace TestsGenerator.Infra.Database.MateriaModule
             }
         }
 
-        public Materia? GetById(int id)
-        {
-            using (conn = new(connectionString))
-            {
-                string query =
-                    @"SELECT
-	                    MT.ID,
-	                    MT.NAME,
-	                    MT.GRADE,
-	                    MT.BIMESTER,
-	                    MT.DISCIPLINE_ID,
-	                    D.NAME as DISCIPLINE_NAME
-
-                      FROM 
-	                    [TBMaterias] AS MT INNER JOIN
-	                    [TBDisciplines] AS D ON MT.DISCIPLINE_ID = D.ID
-
-                      WHERE
-                        MT.ID = @ID";
-
-                using SqlCommand command = new(query, conn);
-
-                command.Parameters.AddWithValue("ID", id);
-
-                conn.Open();
-
-                using SqlDataReader reader = command.ExecuteReader();
-
-                Materia? materia = null;
-
-                if (reader.Read())
-                    materia = new()
-                    {
-                        Id = Convert.ToInt32(reader["ID"]),
-                        Name = Convert.ToString(reader["NAME"]),
-                        Grade = Convert.ToString(reader["GRADE"]),
-                        Bimester = (Bimester)reader["BIMESTER"],
-                        Discipline = new()
-                        {
-                            Id = Convert.ToInt32(reader["DISCIPLINE_ID"]),
-                            Name = Convert.ToString(reader["DISCIPLINE_NAME"])
-                        }
-                    };
-
-                return materia;
-            }
-        }
-
         public AbstractValidator<Materia> GetValidator()
         {
             return new MateriaValidator();

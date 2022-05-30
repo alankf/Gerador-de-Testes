@@ -55,5 +55,10 @@ namespace TestsGenerator.QuestionModule
         {
             _questionController.Delete();
         }
+
+        private void BtnAddAlternatives_Click(object sender, EventArgs e)
+        {
+            _questionController.AddAlternatives();
+        }
     }
 }

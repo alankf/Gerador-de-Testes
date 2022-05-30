@@ -10,7 +10,6 @@ namespace TestsGenerator.Infra.Database.Shared
         ValidationResult Update(T Entity);
         ValidationResult Delete(T Entity);
         List<T> GetAll();
-        T? GetById(int id);
         AbstractValidator<T> GetValidator();
     }
 }

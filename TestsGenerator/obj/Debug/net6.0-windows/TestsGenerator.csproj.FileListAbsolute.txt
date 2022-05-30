@@ -188,3 +188,4 @@ D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.Database.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.Database.pdb
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.AlternativeModule.RegisterAlternativeForm.resources
