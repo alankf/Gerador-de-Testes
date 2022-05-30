@@ -27,13 +27,25 @@ namespace TestsGenerator.Domain.QuestionModule
         {
             return $"{Description}";
         }
+
+        public void AddAlternative(Alternative alternative)
+        {
+            Alternatives.Add(alternative);
+        }
     }
 
     public class Alternative
     {
+        public int Id { get; set; }
         public string Letter { get; set; }
         public bool IsCorrect { get; set; }
         public string Description { get; set; }
+        public Question Question { get; set; }
+
+        public Alternative()
+        {
+
+        }
 
         public Alternative(string letter, bool isCorrect, string description)
         {

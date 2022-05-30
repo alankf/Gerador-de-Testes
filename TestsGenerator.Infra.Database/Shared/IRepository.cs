@@ -9,10 +9,8 @@ namespace TestsGenerator.Infra.Database.Shared
         ValidationResult Insert(T Entity);
         ValidationResult Update(T Entity);
         ValidationResult Delete(T Entity);
-        bool Exists(T Entity);
         List<T> GetAll();
         T? GetById(int id);
-        T? GetByIndex(int index);
         AbstractValidator<T> GetValidator();
     }
 }

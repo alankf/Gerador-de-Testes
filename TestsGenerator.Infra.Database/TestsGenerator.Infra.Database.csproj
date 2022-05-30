@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestsGenerator.Domain\TestsGenerator.Domain.csproj" />
+    <ProjectReference Include="..\TestsGenerator.Infra\TestsGenerator.Infra.csproj" />
   </ItemGroup>
 
 </Project>

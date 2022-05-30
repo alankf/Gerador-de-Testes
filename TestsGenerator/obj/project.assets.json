@@ -1341,7 +1341,8 @@
         "dependencies": {
           "FluentValidation": "11.0.1",
           "System.Data.SqlClient": "4.8.3",
-          "TestsGenerator.Domain": "1.0.0"
+          "TestsGenerator.Domain": "1.0.0",
+          "TestsGenerator.Infra": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TestsGenerator.Infra.Database.dll": {}

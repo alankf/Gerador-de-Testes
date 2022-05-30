@@ -159,6 +159,9 @@
             "projectReferences": {
               "D:\\vs-2022 academia do programador\\TestsGenerator\\TestsGenerator.Domain\\TestsGenerator.Domain.csproj": {
                 "projectPath": "D:\\vs-2022 academia do programador\\TestsGenerator\\TestsGenerator.Domain\\TestsGenerator.Domain.csproj"
+              },
+              "D:\\vs-2022 academia do programador\\TestsGenerator\\TestsGenerator.Infra\\TestsGenerator.Infra.csproj": {
+                "projectPath": "D:\\vs-2022 academia do programador\\TestsGenerator\\TestsGenerator.Infra\\TestsGenerator.Infra.csproj"
               }
             }
           }

@@ -1,7 +1,8 @@
-﻿using TestsGenerator.Domain.QuestionModule;
+﻿using FluentValidation.Results;
+using TestsGenerator.Domain.QuestionModule;
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
-using TestsGenerator.Infra.QuestionModule;
+using TestsGenerator.Infra.Database.QuestionModule;
 using TestsGenerator.Shared;
 
 namespace TestsGenerator.QuestionModule
@@ -24,20 +25,23 @@ namespace TestsGenerator.QuestionModule
 
         public override void Insert()
         {
-            RegisterQuestionForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll());
-
-            screen.Question = new();
-            screen.SaveRecord = _questionRepository.Insert;
+            RegisterQuestionForm screen = new(_disciplineRepository, _materiaRepository)
+            {
+                Question = new(),
+                SaveRecord = _questionRepository.Insert
+            };
 
             DialogResult dialogResult = screen.ShowDialog();
 
             if (dialogResult == DialogResult.OK)
                 LoadQuestions();
+
+            _questionRepository.AddAlternatives(screen.Question, screen.Question.Alternatives);
         }
 
         public override void Update()
         {
-            Question selectedQuestion = GetQuestion();
+            Question? selectedQuestion = GetQuestion();
 
             if (selectedQuestion == null)
             {
@@ -45,12 +49,13 @@ namespace TestsGenerator.QuestionModule
                 return;
             }
 
-            RegisterQuestionForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll());
+            RegisterQuestionForm screen = new(_disciplineRepository, _materiaRepository)
+            {
+                Text = "Editando Questão",
 
-            screen.Text = "Editando Questão";
-
-            screen.Question = selectedQuestion;
-            screen.SaveRecord = _questionRepository.Update;
+                Question = selectedQuestion,
+                SaveRecord = _questionRepository.Update
+            };
 
             DialogResult dialogResult = screen.ShowDialog();
 
@@ -65,6 +70,15 @@ namespace TestsGenerator.QuestionModule
             if (selectedQuestion == null)
             {
                 MessageBox.Show("Selecione uma questão primeiro.", "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            ValidationResult validationResult = _questionRepository.Delete(selectedQuestion);
+
+            if (validationResult.IsValid == false)
+            {
+                MessageBox.Show($"\n{validationResult}", "Exclusão de Questão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -86,17 +100,17 @@ namespace TestsGenerator.QuestionModule
 
         private void LoadQuestions()
         {
-            List<Question> questions = _questionRepository.GetRegisters();
+            List<Question> questions = _questionRepository.GetAll();
 
             questionControl.UpdateGrid(questions);
         }
 
-        private Question GetQuestion()
+        private Question? GetQuestion()
         {
             if (questionControl.GetGrid().CurrentCell != null && questionControl.GetGrid().CurrentCell.Selected == true)
             {
                 int index = questionControl.GetSelectedRow();
-                return _questionRepository.GetByIndex(index);
+                return _questionRepository.GetAll().ElementAtOrDefault(index);
             }
 
             return null;

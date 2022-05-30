@@ -1,4 +1,5 @@
-﻿using TestsGenerator.Domain.MateriaModule;
+﻿using FluentValidation.Results;
+using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Shared;
@@ -21,10 +22,11 @@ namespace TestsGenerator.MateriaModule
 
         public override void Insert()
         {
-            RegisterMateriaForm screen = new(_disciplineRepository.GetAll());
-
-            screen.Materia = new();
-            screen.SaveRecord = _materiaRepository.Insert;
+            RegisterMateriaForm screen = new(_disciplineRepository)
+            {
+                Materia = new(),
+                SaveRecord = _materiaRepository.Insert
+            };
 
             DialogResult dialogResult = screen.ShowDialog();
 
@@ -34,7 +36,7 @@ namespace TestsGenerator.MateriaModule
 
         public override void Update()
         {
-            Materia selectedMateria = GetMateria();
+            Materia? selectedMateria = GetMateria();
 
             if (selectedMateria == null)
             {
@@ -42,12 +44,13 @@ namespace TestsGenerator.MateriaModule
                 return;
             }
 
-            RegisterMateriaForm screen = new(_disciplineRepository.GetAll());
+            RegisterMateriaForm screen = new(_disciplineRepository)
+            {
+                Text = "Editando Matéria",
 
-            screen.Text = "Editando Matéria";
-
-            screen.Materia = selectedMateria;
-            screen.SaveRecord = _materiaRepository.Update;
+                Materia = selectedMateria,
+                SaveRecord = _materiaRepository.Update
+            };
 
             DialogResult dialogResult = screen.ShowDialog();
 
@@ -62,6 +65,14 @@ namespace TestsGenerator.MateriaModule
             if (selectedMateria == null)
             {
                 MessageBox.Show("Selecione uma matéria primeiro.", "Exclusão de Matéria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            ValidationResult validationResult = _materiaRepository.Delete(selectedMateria);
+
+            if (validationResult.IsValid == false)
+            {
+                MessageBox.Show($"\n{validationResult}", "Exclusão de Matéria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -93,7 +104,7 @@ namespace TestsGenerator.MateriaModule
             if (materiaControl.GetGrid().CurrentCell != null && materiaControl.GetGrid().CurrentCell.Selected == true)
             {
                 int index = materiaControl.GetSelectedRow();
-                return _materiaRepository.GetByIndex(index);   
+                return _materiaRepository.GetAll().ElementAtOrDefault(index);   
             }
 
             return null;

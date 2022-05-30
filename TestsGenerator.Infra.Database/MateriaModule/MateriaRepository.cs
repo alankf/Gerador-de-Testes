@@ -3,19 +3,27 @@ using FluentValidation.Results;
 using System.Data.SqlClient;
 using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Domain.Shared;
+using TestsGenerator.Infra.Database.QuestionModule;
 using TestsGenerator.Infra.Database.Shared;
 
 namespace TestsGenerator.Infra.Database.MateriaModule
 {
     public class MateriaRepository : IRepository<Materia>
     {
-        private const string ConnectionString =
+        private const string connectionString =
             @"Data Source=(LocalDB)\MSSqlLocalDB;
               Initial Catalog=DatabaseTest;
               Integrated Security=True;
               Pooling=False";
 
         private SqlConnection? conn = null;
+
+        private QuestionRepository _questionRepository;
+
+        public MateriaRepository(QuestionRepository questionRepository)
+        {
+            _questionRepository = questionRepository;
+        }
 
         public ValidationResult Insert(Materia materia)
         {
@@ -24,7 +32,7 @@ namespace TestsGenerator.Infra.Database.MateriaModule
             if (validationResult.IsValid == false)
                 return validationResult;
 
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query =
                     @"INSERT INTO [TBMATERIAS] 
@@ -69,7 +77,7 @@ namespace TestsGenerator.Infra.Database.MateriaModule
             if (validationResult.IsValid == false)
                 return validationResult;
 
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query =
                     @"UPDATE [TBMATERIAS]
@@ -99,7 +107,7 @@ namespace TestsGenerator.Infra.Database.MateriaModule
 
         public ValidationResult Delete(Materia materia)
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"DELETE FROM [TBMATERIAS] WHERE [ID] = @ID";
 
@@ -109,25 +117,21 @@ namespace TestsGenerator.Infra.Database.MateriaModule
 
                 command.Parameters.AddWithValue("ID", materia.Id);
 
-                int deletedRecordsAmount = command.ExecuteNonQuery();
-
                 ValidationResult validationResult = new();
 
-                if (deletedRecordsAmount == 0)
-                    validationResult.Errors.Add(new ValidationFailure("", "Não foi possível remover o registro."));
+                if (_questionRepository.GetAll().Select(x => x.Materia).Contains(materia))
+                    validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta matéria, pois ela está relacionada a uma questão."));
+
+                if (validationResult.IsValid)
+                    command.ExecuteNonQuery();
 
                 return validationResult;
             }
         }
 
-        public bool Exists(Materia materia)
-        {
-            return GetAll().Contains(materia);
-        }
-
         public List<Materia> GetAll()
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query =
                     @"SELECT
@@ -174,7 +178,7 @@ namespace TestsGenerator.Infra.Database.MateriaModule
 
         public Materia? GetById(int id)
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query =
                     @"SELECT
@@ -218,11 +222,6 @@ namespace TestsGenerator.Infra.Database.MateriaModule
 
                 return materia;
             }
-        }
-
-        public Materia? GetByIndex(int index)
-        {
-            return GetAll().ElementAtOrDefault(index);
         }
 
         public AbstractValidator<Materia> GetValidator()

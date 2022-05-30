@@ -13,3 +13,5 @@ D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\obj\Debug\net6.0\refint\TestsGenerator.Infra.Database.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\obj\Debug\net6.0\TestsGenerator.Infra.Database.pdb
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\obj\Debug\net6.0\ref\TestsGenerator.Infra.Database.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\bin\Debug\net6.0\TestsGenerator.Infra.dll
+D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Infra.Database\bin\Debug\net6.0\TestsGenerator.Infra.pdb

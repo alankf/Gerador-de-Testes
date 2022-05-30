@@ -2,19 +2,27 @@
 using FluentValidation.Results;
 using System.Data.SqlClient;
 using TestsGenerator.Domain.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.Database.Shared;
 
 namespace TestsGenerator.Infra.Database.DisciplineModule
 {
     public class DisciplineRepository : IRepository<Discipline>
     {
-        private const string ConnectionString =
+        private const string connectionString =
             @"Data Source=(LocalDB)\MSSqlLocalDB;
               Initial Catalog=DatabaseTest;
               Integrated Security=True;
               Pooling=False";
 
         private SqlConnection? conn = null;
+
+        private readonly MateriaRepository _materiaRepository;
+
+        public DisciplineRepository(MateriaRepository materiaRepository)
+        {
+            _materiaRepository = materiaRepository;
+        }
 
         public ValidationResult Insert(Discipline discipline)
         {
@@ -23,7 +31,7 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
             if (validationResult.IsValid == false)
                 return validationResult;
 
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"INSERT INTO [TBDISCIPLINES] ([NAME]) VALUES (@NAME)";
 
@@ -47,7 +55,7 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
             if (validationResult.IsValid == false)
                 return validationResult;
 
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"UPDATE [TBDISCIPLINES] SET [NAME] = @NAME WHERE [ID] = @ID";
 
@@ -66,7 +74,7 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
 
         public ValidationResult Delete(Discipline discipline)
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"DELETE FROM [TBDISCIPLINES] WHERE [ID] = @ID";
 
@@ -76,25 +84,21 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
 
                 command.Parameters.AddWithValue("ID", discipline.Id);
 
-                int deletedRecordsAmount = command.ExecuteNonQuery();
-
                 ValidationResult validationResult = new();
 
-                if (deletedRecordsAmount == 0)
-                    validationResult.Errors.Add(new ValidationFailure("", "Não foi possível remover o registro."));
+                if (_materiaRepository.GetAll().Select(x => x.Discipline).Contains(discipline))
+                    validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta disciplina, pois ela está relacionada a uma matéria."));
+
+                if (validationResult.IsValid)
+                    command.ExecuteNonQuery();
 
                 return validationResult;
             }
         }
 
-        public bool Exists(Discipline discipline)
-        {
-            return GetAll().Contains(discipline);
-        }
-
         public List<Discipline> GetAll()
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"SELECT * FROM [TBDISCIPLINES]";
 
@@ -123,7 +127,7 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
 
         public Discipline? GetById(int id)
         {
-            using (conn = new(ConnectionString))
+            using (conn = new(connectionString))
             {
                 string query = @"SELECT * FROM [TBDISCIPLINES] WHERE [ID] = @ID";
 
@@ -146,11 +150,6 @@ namespace TestsGenerator.Infra.Database.DisciplineModule
 
                 return discipline;
             }
-        }
-
-        public Discipline? GetByIndex(int index)
-        {
-            return GetAll().ElementAtOrDefault(index);
         }
 
         public AbstractValidator<Discipline> GetValidator()

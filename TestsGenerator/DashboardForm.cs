@@ -1,7 +1,7 @@
 using TestsGenerator.DisciplineModule;
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
-using TestsGenerator.Infra.QuestionModule;
+using TestsGenerator.Infra.Database.QuestionModule;
 using TestsGenerator.Infra.Shared;
 using TestsGenerator.Infra.TestModule;
 using TestsGenerator.MateriaModule;
@@ -23,14 +23,14 @@ namespace TestsGenerator
 
             _dataContext = dataContext;
 
-            DisciplineRepository disciplineRepository = new();
-            MateriaRepository materiaRepository = new();
-            QuestionRepository questionRepository = new(_dataContext);
             TestRepository testRepository = new(_dataContext);
+            QuestionRepository questionRepository = new(testRepository);
+            MateriaRepository materiaRepository = new(questionRepository);
+            DisciplineRepository disciplineRepository = new(materiaRepository);
 
             controllers = new Dictionary<string, BaseController>
             {
-                { "Disciplinas", new DisciplineController(disciplineRepository) },
+                { "Disciplinas", new DisciplineController(disciplineRepository, materiaRepository) },
                 { "Matérias", new MateriaController(materiaRepository, disciplineRepository) },
                 { "Questões", new QuestionController(questionRepository, materiaRepository, disciplineRepository) },
                 { "Testes", new TestController(testRepository, questionRepository, materiaRepository, disciplineRepository) }

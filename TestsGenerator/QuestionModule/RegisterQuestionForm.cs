@@ -4,21 +4,26 @@ using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Domain.QuestionModule;
 using TestsGenerator.Domain.Shared;
+using TestsGenerator.Infra.Database.DisciplineModule;
+using TestsGenerator.Infra.Database.MateriaModule;
+using TestsGenerator.Infra.Database.QuestionModule;
 
 namespace TestsGenerator.QuestionModule
 {
     public partial class RegisterQuestionForm : Form
     {
         private Question question;
-        private readonly List<Materia> _materias;
+        private readonly DisciplineRepository _disciplineRepository;
+        private readonly MateriaRepository _materiaRepository;
 
-        public RegisterQuestionForm(List<Discipline> disciplines, List<Materia> materias)
+        public RegisterQuestionForm(DisciplineRepository disciplineRepository, MateriaRepository materiaRepository)
         {
             InitializeComponent();
 
-            _materias = materias;
+            _disciplineRepository = disciplineRepository;
+            _materiaRepository = materiaRepository;
 
-            disciplines.ForEach(x => CbxDiscipline.Items.Add(x));
+            _disciplineRepository.GetAll().ForEach(x => CbxDiscipline.Items.Add(x));
         }
 
         public Question Question
@@ -38,6 +43,11 @@ namespace TestsGenerator.QuestionModule
             }
         }
 
+        public List<Alternative> RegisteredAlternatives
+        {
+            get { return ListAlternatives.Items.Cast<Alternative>().ToList(); }
+        }
+
         public Func<Question, ValidationResult> SaveRecord { get; set; }
 
         private void BtnRegister_Click(object sender, EventArgs e)
@@ -51,13 +61,7 @@ namespace TestsGenerator.QuestionModule
             question.Materia = (Materia)CbxMateria.SelectedItem;
             question.Description = RTxbDescription.Text;
 
-            foreach (Alternative item in ListAlternatives.Items)
-            {
-                if (question.Alternatives.Contains(item))
-                    return;
-
-                question.Alternatives.Add(item);
-            }           
+            question.Alternatives = RegisteredAlternatives;
 
             ValidationResult validationResult = SaveRecord(question);
 
@@ -75,8 +79,8 @@ namespace TestsGenerator.QuestionModule
             CbxBimester.Items.Clear();
             CbxMateria.Items.Clear();
 
-            List<string> grades = _materias
-                .Where(x => x.Discipline == (Discipline)CbxDiscipline.SelectedItem)
+            List<string> grades = _materiaRepository.GetAll()
+                .Where(x => x.Discipline.Equals(CbxDiscipline.SelectedItem))
                 .Select(y => y.Grade)
                 .Distinct()
                 .ToList();
@@ -101,9 +105,9 @@ namespace TestsGenerator.QuestionModule
         {
             CbxMateria.Items.Clear();
 
-            List<Materia> materias = _materias
+            List<Materia> materias = _materiaRepository.GetAll()
                 .Where(x =>
-                x.Discipline == (Discipline)CbxDiscipline.SelectedItem &&
+                x.Discipline.Equals(CbxDiscipline.SelectedItem) &&
                 x.Grade == (string)CbxGrade.SelectedItem &&
                 x.Bimester == (Bimester)CbxBimester.SelectedItem)
                 .ToList();

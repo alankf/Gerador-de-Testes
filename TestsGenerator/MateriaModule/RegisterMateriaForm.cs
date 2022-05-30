@@ -2,6 +2,7 @@
 using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Domain.Shared;
+using TestsGenerator.Infra.Database.DisciplineModule;
 
 namespace TestsGenerator.MateriaModule
 {
@@ -9,14 +10,14 @@ namespace TestsGenerator.MateriaModule
     {
         private Materia materia;
 
-        public RegisterMateriaForm(List<Discipline> disciplines)
+        public RegisterMateriaForm(DisciplineRepository disciplineRepository)
         {
             InitializeComponent();
 
             List<Bimester> bimesters = Enum.GetValues(typeof(Bimester)).Cast<Bimester>().ToList();
 
             bimesters.ForEach(x => CbxBimester.Items.Add(x));
-            disciplines.ForEach(x => CbxDiscipline.Items.Add(x));
+            disciplineRepository.GetAll().ForEach(x => CbxDiscipline.Items.Add(x));
         }
 
         public Materia Materia

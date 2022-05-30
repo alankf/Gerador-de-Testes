@@ -10,5 +10,17 @@ namespace TestsGenerator.Domain.DisciplineModule
         {
             Name = t.Name;
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Discipline discipline &&
+                   Id == discipline.Id &&
+                   Name == discipline.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name);
+        }
     }
 }

@@ -17,5 +17,20 @@ namespace TestsGenerator.Domain.MateriaModule
             Bimester = t.Bimester;
             Discipline = t.Discipline;
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Materia materia &&
+                   Id == materia.Id &&
+                   Name == materia.Name &&
+                   Grade == materia.Grade &&
+                   Bimester == materia.Bimester &&
+                   EqualityComparer<Discipline>.Default.Equals(Discipline, materia.Discipline);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, Grade, Bimester, Discipline);
+        }
     }
 }
