@@ -2,8 +2,7 @@ using TestsGenerator.DisciplineModule;
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.Database.QuestionModule;
-using TestsGenerator.Infra.Shared;
-using TestsGenerator.Infra.TestModule;
+using TestsGenerator.Infra.Database.TestModule;
 using TestsGenerator.MateriaModule;
 using TestsGenerator.QuestionModule;
 using TestsGenerator.Shared;
@@ -15,15 +14,12 @@ namespace TestsGenerator
     {
         private BaseController controller;
         private readonly Dictionary<string, BaseController> controllers;
-        private readonly DataContext _dataContext;
 
-        public DashboardForm(DataContext dataContext)
+        public DashboardForm()
         {
             InitializeComponent();
 
-            _dataContext = dataContext;
-
-            TestRepository testRepository = new(_dataContext);
+            TestRepository testRepository = new();
             QuestionRepository questionRepository = new(testRepository);
             MateriaRepository materiaRepository = new(questionRepository);
             DisciplineRepository disciplineRepository = new(materiaRepository);
@@ -61,11 +57,6 @@ namespace TestsGenerator
             PanelContent.Tag = control;
 
             control.Show();
-        }
-
-        private void DashboardForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            _dataContext.Save();
         }
 
         private void BtnDashboard_Click(object sender, EventArgs e)

@@ -2,7 +2,7 @@
 using TestsGenerator.Infra.Database.DisciplineModule;
 using TestsGenerator.Infra.Database.MateriaModule;
 using TestsGenerator.Infra.Database.QuestionModule;
-using TestsGenerator.Infra.TestModule;
+using TestsGenerator.Infra.Database.TestModule;
 using TestsGenerator.Shared;
 
 namespace TestsGenerator.TestModule
@@ -27,10 +27,11 @@ namespace TestsGenerator.TestModule
 
         public override void Insert()
         {
-            RegisterTestForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll(), _questionRepository.GetAll());
-
-            screen.Test = new();
-            screen.SaveRecord = _testRepository.Insert;
+            RegisterTestForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll(), _questionRepository.GetAll())
+            {
+                Test = new(),
+                InsertRecord = _testRepository.Insert
+            };
 
             DialogResult dialogResult = screen.ShowDialog();
 
@@ -38,12 +39,31 @@ namespace TestsGenerator.TestModule
                 LoadTests();
         }
 
-        // to-do?
-        public override void Update() { }
+        public override void Update() 
+        {
+            Test? selectedTest = GetTest();
+
+            if (selectedTest == null)
+            {
+                MessageBox.Show("Selecione um teste primeiro.", "Edição de Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            RegisterTestForm screen = new(_disciplineRepository.GetAll(), _materiaRepository.GetAll(), _questionRepository.GetAll())
+            {
+                Test = selectedTest.Clone(),
+                EditRecord = _testRepository.Update
+            };
+
+            DialogResult dialogResult = screen.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+                LoadTests();
+        }
 
         public override void Delete()
         {
-            Test selectedTest = GetTest();
+            Test? selectedTest = GetTest();
 
             if (selectedTest == null)
             {
@@ -69,7 +89,7 @@ namespace TestsGenerator.TestModule
 
         public void GeneratePdf()
         {
-            Test selectedTest = GetTest();
+            Test? selectedTest = GetTest();
 
             if (selectedTest == null)
             {
@@ -87,7 +107,7 @@ namespace TestsGenerator.TestModule
 
         public void Duplicate()
         {
-            Test selectedTest = GetTest();
+            Test? selectedTest = GetTest();
 
             if (selectedTest == null)
             {
@@ -100,17 +120,17 @@ namespace TestsGenerator.TestModule
 
         private void LoadTests()
         {
-            List<Test> tests = _testRepository.GetRegisters();
+            List<Test> tests = _testRepository.GetAll();
 
             testControl.UpdateGrid(tests);
         }
 
-        public Test GetTest()
+        public Test? GetTest()
         {
             if (testControl.GetGrid().CurrentCell != null && testControl.GetGrid().CurrentCell.Selected == true)
             {
                 int index = testControl.GetSelectedRow();
-                return _testRepository.GetByIndex(index);
+                return _testRepository.GetAll().ElementAtOrDefault(index);
             }
 
             return null;

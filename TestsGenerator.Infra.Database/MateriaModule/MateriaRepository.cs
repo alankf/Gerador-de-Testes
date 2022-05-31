@@ -18,7 +18,7 @@ namespace TestsGenerator.Infra.Database.MateriaModule
 
         private SqlConnection? conn = null;
 
-        private QuestionRepository _questionRepository;
+        private readonly QuestionRepository _questionRepository;
 
         public MateriaRepository(QuestionRepository questionRepository)
         {

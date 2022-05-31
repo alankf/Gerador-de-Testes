@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnRegisterTest = new System.Windows.Forms.ToolStripButton();
+            this.BtnEditTest = new System.Windows.Forms.ToolStripButton();
             this.BtnDuplicate = new System.Windows.Forms.ToolStripButton();
             this.BtnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -68,6 +69,7 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnRegisterTest,
+            this.BtnEditTest,
             this.BtnDuplicate,
             this.BtnDelete,
             this.toolStripSeparator1,
@@ -91,6 +93,18 @@
             this.BtnRegisterTest.Size = new System.Drawing.Size(50, 45);
             this.BtnRegisterTest.Text = "Cadastrar Teste";
             this.BtnRegisterTest.Click += new System.EventHandler(this.BtnRegisterTest_Click);
+            // 
+            // BtnEditTest
+            // 
+            this.BtnEditTest.AutoSize = false;
+            this.BtnEditTest.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnEditTest.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditTest.Image")));
+            this.BtnEditTest.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.BtnEditTest.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnEditTest.Name = "BtnEditTest";
+            this.BtnEditTest.Size = new System.Drawing.Size(50, 45);
+            this.BtnEditTest.Text = "Duplicar Teste";
+            this.BtnEditTest.Click += new System.EventHandler(this.BtnEditTest_Click);
             // 
             // BtnDuplicate
             // 
@@ -265,5 +279,6 @@
         private DataGridViewTextBoxColumn ClnGrade;
         private DataGridViewTextBoxColumn ClnBimester;
         private DataGridViewTextBoxColumn ClnDiscipline;
+        private ToolStripButton BtnEditTest;
     }
 }

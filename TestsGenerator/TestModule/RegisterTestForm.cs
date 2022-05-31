@@ -28,10 +28,48 @@ namespace TestsGenerator.TestModule
         {
             get { return test; }
 
-            set { test = value; }
+            set 
+            { 
+                test = value;
+
+                TxbTitle.Text = test.Title;
+                CbxDiscipline.SelectedItem = test.Discipline;
+                CbxGrade.SelectedItem = test.Grade;
+                CbxBimester.SelectedItem = test.Bimester;
+                CbxMateria.SelectedItem = test.Materia;
+
+                int i = 0;
+
+                for (int j = 0; j < ClbxAvailableQuestions.Items.Count; i++)
+                {
+                    Question question = (Question)ClbxAvailableQuestions.Items[j];
+
+                    if (test.Questions.Contains(question))
+                        ClbxAvailableQuestions.SetItemChecked(i, true);
+
+                    i++;
+                }
+            }
         }
 
-        public Func<Test, ValidationResult> SaveRecord { get; set; }
+        public List<Question> SelectedQuestions
+        {
+            get
+            {
+                return ClbxAvailableQuestions.CheckedItems.Cast<Question>().ToList();
+            }
+        }
+
+        public List<Question> NonSelectedQuestions
+        {
+            get
+            {
+                return ClbxAvailableQuestions.Items.Cast<Question>().Except(SelectedQuestions).ToList();
+            }
+        }
+
+        public Func<Test, List<Question>, ValidationResult> InsertRecord { get; set; }
+        public Func<Test, List<Question>, List<Question>, ValidationResult> EditRecord { get; set; }
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
@@ -44,18 +82,12 @@ namespace TestsGenerator.TestModule
 
             test.Materia = (Materia)CbxMateria.SelectedItem;
 
-            foreach (Question item in ClbxAvailableQuestions.Items)
-            {
-                if (ClbxAvailableQuestions.CheckedItems.Contains(item))
-                {
-                    if (test.Questions.Contains(item))
-                        return;
+            ValidationResult? validationResult = null;
 
-                    test.Questions.Add(item);
-                }
-            }
-
-            ValidationResult validationResult = SaveRecord(test);
+            if (test.Id == 0)
+                validationResult = InsertRecord(test, SelectedQuestions);
+            else
+                validationResult = EditRecord(test, SelectedQuestions, NonSelectedQuestions);
 
             if (validationResult.IsValid == false)
             {
@@ -73,7 +105,7 @@ namespace TestsGenerator.TestModule
             ClbxAvailableQuestions.Items.Clear();
 
             List<string> grades = _materias
-                .Where(x => x.Discipline == (Discipline)CbxDiscipline.SelectedItem)
+                .Where(x => x.Discipline.Equals(CbxDiscipline.SelectedItem))
                 .Select(y => y.Grade)
                 .Distinct()
                 .ToList();
@@ -100,7 +132,7 @@ namespace TestsGenerator.TestModule
 
             List<Materia> materias = _materias
                 .Where(x =>
-                x.Discipline == (Discipline)CbxDiscipline.SelectedItem &&
+                x.Discipline.Equals(CbxDiscipline.SelectedItem) &&
                 x.Grade == (string)CbxGrade.SelectedItem &&
                 x.Bimester == (Bimester)CbxBimester.SelectedItem)
                 .ToList();
@@ -112,10 +144,10 @@ namespace TestsGenerator.TestModule
         {
             List<Question> questions = _questions
                 .Where(x =>
-                x.Discipline == (Discipline)CbxDiscipline.SelectedItem &&
+                x.Discipline.Equals(CbxDiscipline.SelectedItem) &&
                 x.Grade == (string)CbxGrade.SelectedItem &&
                 x.Bimester == (Bimester)CbxBimester.SelectedItem &&
-                x.Materia == (Materia)CbxMateria.SelectedItem)
+                x.Materia.Equals(CbxMateria.SelectedItem))
                 .ToList();
 
             questions.ForEach(x => ClbxAvailableQuestions.Items.Add(x));

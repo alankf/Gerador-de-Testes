@@ -25,6 +25,15 @@ namespace TestsGenerator.Domain.TestModule
             Questions = t.Questions;
         }
 
+        public void AddQuestion(Question question)
+        {
+            if (Questions.Contains(question) == false)
+            {
+                Questions.Add(question);
+                question.AddTest(this);
+            }
+        }
+
         public Test Clone()
         {
             return MemberwiseClone() as Test;

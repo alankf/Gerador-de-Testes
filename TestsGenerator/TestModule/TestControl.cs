@@ -46,6 +46,11 @@ namespace TestsGenerator.TestModule
             _testController.Insert();
         }
 
+        private void BtnEditTest_Click(object sender, EventArgs e)
+        {
+            _testController.Update();
+        }
+
         private void BtnDeleteTest_Click(object sender, EventArgs e)
         {
             _testController.Delete();

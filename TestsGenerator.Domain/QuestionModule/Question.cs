@@ -2,6 +2,7 @@
 using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.MateriaModule;
 using TestsGenerator.Domain.Shared;
+using TestsGenerator.Domain.TestModule;
 
 namespace TestsGenerator.Domain.QuestionModule
 {
@@ -13,6 +14,7 @@ namespace TestsGenerator.Domain.QuestionModule
         public Bimester? Bimester { get; set; }
         public Materia Materia { get; set; }
         public List<Alternative> Alternatives { get; set; } = new();
+        public List<Test> Tests { get; set; } = new();
 
         public override void Update(Question t)
         {
@@ -32,6 +34,15 @@ namespace TestsGenerator.Domain.QuestionModule
         public void AddAlternative(Alternative alternative)
         {
             Alternatives.Add(alternative);
+        }
+
+        public void AddTest(Test test)
+        {
+            if (Tests.Contains(test) == false) 
+            {
+                Tests.Add(test);
+                test.AddQuestion(this);
+            }
         }
     }
 }

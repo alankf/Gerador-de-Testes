@@ -7,10 +7,8 @@ D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.dll
-D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.dll
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Components.pdb
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Domain.pdb
-D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\bin\Debug\net6.0-windows\TestsGenerator.Infra.pdb
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.csproj.AssemblyReference.cache
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DashboardForm.resources
 D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator\obj\Debug\net6.0-windows\TestsGenerator.DisciplineModule.DisciplineControl.resources

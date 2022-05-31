@@ -16,7 +16,6 @@
     <ProjectReference Include="..\TestsGenerator.Components\TestsGenerator.Components.csproj" />
     <ProjectReference Include="..\TestsGenerator.Domain\TestsGenerator.Domain.csproj" />
     <ProjectReference Include="..\TestsGenerator.Infra.Database\TestsGenerator.Infra.Database.csproj" />
-    <ProjectReference Include="..\TestsGenerator.Infra\TestsGenerator.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>

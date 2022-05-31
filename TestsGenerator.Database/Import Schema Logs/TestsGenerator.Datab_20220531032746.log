@@ -1,0 +1,87 @@
+31/05/2022 12:27:46	This log contains information about the import schema operation into project 'TestsGenerator.Database' on computer 'DESKTOP-C9TJRRT' by user 'alanf'.
+31/05/2022 12:27:46	Import of database schema has started.
+31/05/2022 12:27:50	Gathering database credentials
+31/05/2022 12:27:50	Gathering database options
+31/05/2022 12:27:50	Gathering generic database scoped configuration option
+31/05/2022 12:27:50	Gathering users
+31/05/2022 12:27:50	Gathering roles
+31/05/2022 12:27:50	Gathering application roles
+31/05/2022 12:27:50	Gathering role memberships
+31/05/2022 12:27:50	Gathering filegroups
+31/05/2022 12:27:50	Gathering full-text catalogs
+31/05/2022 12:27:50	Gathering assemblies
+31/05/2022 12:27:50	Gathering certificates
+31/05/2022 12:27:50	Gathering asymmetric keys
+31/05/2022 12:27:50	Gathering symmetric keys
+31/05/2022 12:27:50	Gathering encrypted symmetric keys
+31/05/2022 12:27:50	Gathering schemas
+31/05/2022 12:27:50	Gathering XML schema collections
+31/05/2022 12:27:50	Gathering user-defined data types
+31/05/2022 12:27:50	Gathering user-defined types
+31/05/2022 12:27:50	Gathering table types
+31/05/2022 12:27:50	Gathering unique keys for table types
+31/05/2022 12:27:50	Gathering primary keys for table types
+31/05/2022 12:27:50	Gathering indexes for table types
+31/05/2022 12:27:50	Gathering check constraints for table types
+31/05/2022 12:27:50	Gathering default constraints for table types
+31/05/2022 12:27:50	Gathering partition functions
+31/05/2022 12:27:50	Gathering partition schemes
+31/05/2022 12:27:50	Gathering functions
+31/05/2022 12:27:50	Gathering encrypted functions
+31/05/2022 12:27:50	Gathering aggregates
+31/05/2022 12:27:50	Gathering procedures
+31/05/2022 12:27:50	Gathering encrypted procedures
+31/05/2022 12:27:50	Gathering tables
+31/05/2022 12:27:50	Gathering primary keys
+31/05/2022 12:27:50	Gathering unique constraints
+31/05/2022 12:27:50	Gathering foreign keys
+31/05/2022 12:27:50	Gathering default constraints
+31/05/2022 12:27:50	Gathering check constraints
+31/05/2022 12:27:50	Gathering views
+31/05/2022 12:27:50	Gathering encrypted views
+31/05/2022 12:27:50	Gathering indexes
+31/05/2022 12:27:50	Gathering statistics
+31/05/2022 12:27:50	Gathering full-text index stoplists
+31/05/2022 12:27:50	Gathering search property lists
+31/05/2022 12:27:50	Gathering search properties
+31/05/2022 12:27:50	Gathering full-text indexes
+31/05/2022 12:27:50	Gathering column store indexes
+31/05/2022 12:27:50	Gathering spatial indexes
+31/05/2022 12:27:50	Gathering XML indexes
+31/05/2022 12:27:50	Gathering Selective XML indexes
+31/05/2022 12:27:50	Gathering encrypted triggers
+31/05/2022 12:27:50	Gathering triggers
+31/05/2022 12:27:50	Gathering encrypted and clr ddl triggers
+31/05/2022 12:27:50	Gathering ddl triggers
+31/05/2022 12:27:50	Creating edge constraints
+31/05/2022 12:27:50	Gathering synonyms
+31/05/2022 12:27:50	Gathering defaults
+31/05/2022 12:27:50	Gathering data constraint uddt bindings
+31/05/2022 12:27:50	Gathering rules
+31/05/2022 12:27:50	Gathering data constraint uddt bindings
+31/05/2022 12:27:50	Gathering message types
+31/05/2022 12:27:50	Gathering queues
+31/05/2022 12:27:50	Gathering contracts
+31/05/2022 12:27:50	Gathering services
+31/05/2022 12:27:50	Gathering event notifications
+31/05/2022 12:27:50	Gathering remote service bindings
+31/05/2022 12:27:50	Gathering broker priorities
+31/05/2022 12:27:50	Gathering signatures
+31/05/2022 12:27:50	Gathering data compression options
+31/05/2022 12:27:50	Gathering sequence types
+31/05/2022 12:27:50	Gathering security policies
+31/05/2022 12:27:50	Gather column encryption keys
+31/05/2022 12:27:50	Gathering column master keys
+31/05/2022 12:27:50	Gathering external data sources
+31/05/2022 12:27:50	Gathering external file formats
+31/05/2022 12:27:50	Gathering external tables
+31/05/2022 12:27:50	Gathering extended properties
+31/05/2022 12:27:50	Gathering assemblies
+31/05/2022 12:27:50	Gathering credentials
+31/05/2022 12:27:50	Gathering logins
+31/05/2022 12:27:50	Gathering server audits
+31/05/2022 12:27:51	Scanning project for duplicate elements
+31/05/2022 12:27:51	Finished duplicate element processing
+31/05/2022 12:27:51	Finished importing database.
+31/05/2022 12:27:51	A summary of the import was saved to the following location: D:\vs-2022 academia do programador\TestsGenerator\TestsGenerator.Database\Import Schema Logs\TestsGenerator.Datab_20220531032746.log
+31/05/2022 12:27:51	Click Finish to continue...

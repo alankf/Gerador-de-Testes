@@ -6,7 +6,7 @@ using TestsGenerator.Domain.DisciplineModule;
 using TestsGenerator.Domain.QuestionModule;
 using TestsGenerator.Domain.Shared;
 using TestsGenerator.Infra.Database.Shared;
-using TestsGenerator.Infra.TestModule;
+using TestsGenerator.Infra.Database.TestModule;
 
 namespace TestsGenerator.Infra.Database.QuestionModule
 {
@@ -120,7 +120,7 @@ namespace TestsGenerator.Infra.Database.QuestionModule
 
                 ValidationResult validationResult = new();
 
-                _testRepository.GetRegisters().Select(x => x.Questions).ToList().ForEach(x =>
+                _testRepository.GetAll().Select(x => x.Questions).ToList().ForEach(x =>
                 {
                     if (x.Contains(question))
                         validationResult.Errors.Add(new ValidationFailure("", "Não é possível remover esta questão, pois ela está relacionada a um teste."));
@@ -190,7 +190,6 @@ namespace TestsGenerator.Infra.Database.QuestionModule
                         Grade = Convert.ToString(reader["GRADE"]),
                         Bimester = (Bimester)reader["BIMESTER"],
                         Discipline = discipline,
-
                         Materia = new()
                         {
                             Id = Convert.ToInt32(reader["MATERIA_ID"]),

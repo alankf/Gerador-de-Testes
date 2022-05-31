@@ -68,6 +68,14 @@
         MMWAagbhAqMWEARD34JRMOQAAwMATLszzZMl7ZQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="BtnEditTest.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVEhL7ZHBCYAwDAA7giM4giM5mhs4im6iG2iONhCk
+        +KjJQ+jBUWnhUmzqFCZxzJ/+LOJVnNnwxMbdh9Ti6uff9RZH3qQZjZ/FZ5zzZmycW6Id4hoH1kPs8Z/F
+        B3EVw+KbGBKHXQyLAxEMiYMOAPc46ACrWxxC450KKd3C6mW7gl8dPgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="BtnDuplicate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
